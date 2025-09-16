@@ -1,0 +1,132 @@
+@import "tailwindcss";
+
+@keyframes color {
+  to {
+    color: #104e64;
+  }
+}
+
+@keyframes bgcolor {
+  to {
+    background-color: #104e64;
+  }
+}
+
+@keyframes shadow {
+  0% {
+    box-shadow: 0px 5px 10px 2px #53eafd;
+    translate: 0 20px;
+  }
+  100% {
+    box-shadow: 0px -5px 10px 2px #53eafd;
+    translate: 0 -20px;
+  }
+}
+
+@keyframes goDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes goUp {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes goRight {
+  0% {
+    transform: translate(-100%);
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes goLeft {
+  0% {
+    transform: translate(100%);
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes scale {
+  to {
+    scale: 1;
+  }
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+    transform-origin: center;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    transform: scale(0.91);
+    animation-timing-function: ease-in;
+  }
+  17% {
+    transform: scale(0.98);
+    animation-timing-function: ease-out;
+  }
+  33% {
+    transform: scale(0.87);
+    animation-timing-function: ease-in;
+  }
+  45% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+}
+
+@keyframes jello-vertical {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  25% {
+    transform: scale3d(0.9, 1.1, 1);
+  }
+  50% {
+    transform: scale3d(1.1, 0.9, 1);
+  }
+  75% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes cube {
+  from {
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    opacity: 1;
+  }
+  to {
+    transform: scale(20) rotate(960deg) translate(-50%, -50%);
+    opacity: 0;
+  }
+}
